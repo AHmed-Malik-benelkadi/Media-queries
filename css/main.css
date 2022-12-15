@@ -1,0 +1,314 @@
+html,body
+{
+  padding:0;
+  margin:0;
+  height:auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+header
+{
+  background-color: peru;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CSS Pour le menu --
+---
+ */
+#menu, #menu ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-align: center;
+}
+#logoheader{
+  width: 200px;
+}
+#menu li {
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+
+}
+#menu li li {
+  display:inherit;
+}
+#menu ul li a{
+  width: 160px;
+}
+#menu a {
+  display:block;
+  padding:5px 50px;
+  text-decoration: none;
+  color:#fff;
+  font-family: 'TravelingTypewriter';
+}
+.imgflag {
+  width: 40px;
+  float: left;
+  padding-right: 3px;
+}
+#menu ul li a {
+  padding:5px 8px;
+}
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  min-width:100%;
+  white-space: nowrap;
+  text-align: left;
+}
+#menu ul ul {
+  left:100%;
+  top:0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+  transition: 0.3s all;
+}
+#menu ul li:hover ul {
+  max-width: 50em;
+}
+#menu ul li {
+  max-height:0;
+  overflow: hidden;
+  transition:all 0.8s;
+}
+#menu li li li {
+  max-height: inherit;
+}
+#menu li:hover li {
+  max-height: 15em;
+  overflow: visible;
+}
+/* background des liens menus */
+.menu-1 {
+  background-color:  #3c3b6e;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top:120px;
+  margin-right:50px;
+}
+.menu-1 li {
+  background:dimgray;
+}
+.menu-1 ul{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu-1 li:hover {
+  background:red;
+}
+.menu-2 {
+  background-color: #3c3b6e;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top:120px;
+  margin-left:50px;
+}
+.menu-2 li {
+  background:dimgray;
+}
+.menu-2 li:hover {
+  background:red;
+}
+.menu-2 ul{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Fin  CSS Pour le menu --
+---
+ */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20PX;
+  MARGIN-TOP: revert;
+}
+h2
+{
+  margin-left: 20px;
+}
+.hymne
+{
+  text-align: center;
+}
+/* css sur le main
+-------------------
+
+ */
+
+main{
+  background: linear-gradient(indianred, pink);
+
+}
+.THEFLAG
+{
+  display: block;
+  margin: 0 auto;
+}
+.cont
+{
+  border: 7px groove black;
+}
+p
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  text-size-adjust: 20px;
+}
+.Image1
+
+{
+  margin-left: 50PX;
+  margin-top: 20PX;
+  margin-bottom: 20px;
+  width: 200px;
+  margin-right: 20px;
+}
+.Image2{
+  margin-left: 50PX;
+  margin-top: 20PX;
+  margin-bottom: 20px;
+  width: 200px;
+  margin-right: 20px;
+}
+.Image3
+{
+  margin-left: 50PX;
+  margin-top: 20PX;
+  margin-bottom: 20px;
+  width: 200px;
+  margin-right: 20px;
+}
+.photo-flex
+{
+
+ display: flex;
+
+}
+
+/*  FIN css sur le main
+-------------------
+
+ */
+.img {
+  padding: 10px;
+}
+
+.imagedenorvege
+{
+
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+.imagepaysage
+{
+  display: block;
+  width: 39%;
+  margin: auto;
+}
+
+.videoytb
+{ display: block;
+  width: 39%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+a:link {
+  color: #ccc;
+}
+/* lien visité */
+a:visited {
+  color: #095484;
+}
+/* souris sur le lien */
+a:hover {
+  color: hotpink;
+}
+/* lien sélécté */
+a:active {
+  color: #800000;
+}
+
+/* Partie du pied de page
+-------------------------
+ */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: antiquewhite;
+}
+.copyright{
+  padding-left:20px;
+}
+.copyright p{
+  font-family: 'Fragmentcore';
+}
+
+audio
+{
+  display: block;
+  width: 39%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+@media all and (max-width: 760px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu li {
+    display: block;
+  }
+
+  #menu ul {
+    position: static;
+  }
+
+  .photo-flex {
+    flex-direction: column;
+  }
+
+  .photo-flex img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 20px;
+  }
+
+  .THEFLAG {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 2em;
+
+  }
+  audio
+  {
+    margin-top: 20px;
+  }
+  .menu-2 {
+    margin-bottom: 50%;
+
+  }
+}
+  /* styles pour les écrans de moins de 768px de large */
+
+
