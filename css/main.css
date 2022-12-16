@@ -199,6 +199,7 @@ p
  */
 .img {
   padding: 10px;
+  width: 20px;
 }
 
 .imagedenorvege
@@ -265,50 +266,77 @@ audio
 }
 
 
+/* styles pour les écrans de moins de 768px de large */
 
 @media all and (max-width: 760px) {
+  /* Définition de l'élément #menu en tant qu'élément de flex */
   #menu {
     display: flex;
     flex-direction: column;
   }
 
+  /* Affichage des éléments li de #menu en tant que blocs */
   #menu li {
     display: block;
   }
 
+  /* Positionnement statique des éléments ul de #menu */
   #menu ul {
     position: static;
   }
 
+  /* Définition de la classe .menu-1 qui ajoute une marge en haut et à droite */
+  .menu-1 {
+    margin-top: 5px;
+    margin-right: 0px;
+  }
+
+  /* Définition de la classe .menu-2 qui ajoute une marge en haut, à gauche et en bas */
+  .menu-2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+
+  /* Définition de la classe .photo-flex qui positionne les éléments en colonne */
   .photo-flex {
     flex-direction: column;
   }
 
+  /* Affichage des images de la classe .photo-flex en tant que blocs, avec une largeur et une hauteur de 50% et une marge centrée */
   .photo-flex img {
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
+    height: 50%;
     margin-top: 20px;
   }
 
+  /* Affichage de l'élément .THEFLAG en tant que bloc et centré */
   .THEFLAG {
     display: block;
     margin: 0 auto;
   }
 
+  /* Modification de la taille de police des éléments p */
   p {
-    font-size: 2em;
-
+    font-size: 1em;
   }
-  audio
-  {
+
+  /* Ajout d'une marge en haut aux éléments audio */
+  audio {
     margin-top: 20px;
   }
-  .menu-2 {
-    margin-bottom: 50%;
+
+  /* Définition de la classe .videoytb qui ajoute une largeur et une hauteur de 50% */
+  .videoytb {
+    width: 50%;
+    height: 50%;
 
   }
+  .img
+  {
+    width: 40px;
+  }
 }
-  /* styles pour les écrans de moins de 768px de large */
-
 
